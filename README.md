@@ -35,3 +35,8 @@ Trudne, bo wymaga infrastruktury real-time (zupelnie inny poziom skomplikowania 
 - real time call LLM api (trzeba zdecydowac kiedy wysylamy kontekst, poczkeac 4-5 seknd na odpowiedz LLM, a w rozmowie trzeba reagowac blyskawicznie)
 
 Co robic jako 1. etap, jezeli okaze sie ze taktyki / kombinacja klienta dzialaja: spersonalizowane przygotowanie / argumenty dla danego klienta przed rozmowa, jezeli na podstawie jego kontesktu mozna przewidziec jego obiekcje (historyczne obiekcje, typowe obiekcje dla podobnych klientow, etc). => Automatyczne wydobywanie historycznych obiekcji klienta, automatyczna analiza jak przebiegaly rozmowy historyczne. 
+
+## 5. Analiza eksploracyjna danych - on top
+
+- Obiekcje - Reakcje - najczestsze / co dziala / nie dzia;a
+- Sentyment wyciagant z tonu glosu (a nie samej tresci)
