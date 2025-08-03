@@ -18,7 +18,7 @@ Cel: zrozumienie zmiennych wyjaśniających sprzedaż, żeby można było na nic
 
 ## 3. Automatyczne generowanie zmiennych do checklisty z wykorzystaniem LLM
 
-Chodzi o to, zeby
+Chodzi o to, zeby zrobić
 a. Katalog: Wydobyc nowe taktyki / style (hipoteza: pewnie o wiekszym stopniu zlozonosci niz dot. checklista) - kandydatow do werfyikacji czy dobrze wplywaja na sprzedaz
 b. Scoring: Przygotowac te zmienne dla wszystkich rozmow z bazy
 b. Rozszerzyc model z punktu 2. i sprawdzic, czy nowe zmienne z a. wplywaja na sprzedaz
@@ -40,3 +40,11 @@ Co robic jako 1. etap, jezeli okaze sie ze taktyki / kombinacja klienta dzialaja
 
 - Obiekcje - Reakcje - najczestsze / co dziala / nie dzia;a
 - Sentyment wyciagant z tonu glosu (a nie samej tresci)
+
+
+## Zoom in na główne założenia techniczne 1.:
+- Stworzenie bazy zsanityzowanych danych w postaci par (rozmowa - checklista wypelniona przez ludzkiego ewaluatora) - 10 par zeby wystartowac.
+- Pisanie kodu w Cursor na zsanityzowanych danych, potem wdrazanie środowisko Snowflake
+- Integracha z LLMami pozwalajaca elastycznie zmieniac vendora LLM
+- Pisanie w jezyku Rust - jezyk kompilowany i silnie typowany lepszy dla pisania z AI niz Python
+- Baza danych: Postgres
